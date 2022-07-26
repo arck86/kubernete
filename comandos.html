@@ -1,0 +1,24 @@
+<div style="margin-left: 50px; margin-top: 25px;">
+    <h1>Desplegar el dashboard</h1>
+    <div style="margin-left:50px">
+        <p>kubectl apply -f dashboard-adminuser.yaml</p>
+        <p>kubectl -n kubernetes-dashboard create token admin-user</p>
+        <p>kubectl proxy</p>
+    </div>
+</div>
+
+<div style="margin-left: 50px; margin-top: 25px;">
+    <h1>Desplegar desde YML</h1>
+    <div style="margin-left:50px">
+        <p>kubectl apply -f fichero.yml</p>
+        <p>kubectl get pods</p>
+        <p>kubectl delete -f fichero.yml</p>
+    </div>
+</div>
+
+<div style="margin-left: 50px; margin-top: 25px;">
+    <h1>Ejecutar sobre desplegado</h1>
+    <div style="margin-left:50px">
+        <p>kubectl exec my-nginx -it sh</p>
+    </div>
+</div>
