@@ -18,13 +18,6 @@ spec:
       containers:
       - name: my-nginx
         image: nginx:alpine
-        livenessProbe: #Prueba de vida, si no la cumple es como si hubiese fallado
-          httpGet:
-            path: /index-html
-            port: 80
-          initialDelaySeconds: 15
-          timeoutSeconds: 2
-          periodSeconds: 5
         resources:
           limits:
             memory: "128Mi"
