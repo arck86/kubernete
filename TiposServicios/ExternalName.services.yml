@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: external-service
   labels:
-    app: nginx
+    app: my-nginx
 spec:
   type: ExternalName
   externalName: api.acmecorp.com
