@@ -1,14 +1,12 @@
 #ClusterIP
-apiVersion: apps/v1
+apiVersion: app/v1
 kind: Service
 metadata:
-  name: nginx
-  labels:
-    app: nginx
+  name: my-nginx-clusterip
 spec:
-  selectro:
-    app: nginx
+  type: ClusterIP
+  selector:
+    app: my-nginx
   ports:
-  -name: http
-    port: 80
+    port: 8080
     targetport: 80
